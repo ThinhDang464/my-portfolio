@@ -2,6 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { HiMail } from "react-icons/hi";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { HiDocumentText } from "react-icons/hi"; // For CV/Resume
 
 const navLinks = [
   { name: "Home", href: "#" },
@@ -16,7 +19,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#0A192F] text-white py-4 px-6">
+    <header className=" text-white py-4 px-6">
       {/* Large Desktop Layout (xl screens and up) - Full 3-column grid */}
       <div className="hidden xl:grid grid-cols-3 items-center">
         {/* Logo - Column 1 */}
@@ -25,8 +28,8 @@ export function Header() {
             <Image
               src="/TD.png"
               alt="Logo"
-              width={80}
-              height={80}
+              width={90}
+              height={90}
               className="h-auto"
             />
           </Link>
@@ -58,15 +61,40 @@ export function Header() {
         {/* Social Icons + Connect Button - Column 3 */}
         <div className="justify-self-end flex items-center gap-4">
           <div className="flex gap-3">
-            <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group">
-              @
-            </div>
-            <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group">
-              in
-            </div>
-            <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group">
-              gh
-            </div>
+            <a
+              href="mailto:thinhd464@gmail.com"
+              className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+              aria-label="Email"
+            >
+              <HiMail className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+            </a>
+            <a
+              href="https://linkedin.com/in/thinhdangg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+            </a>
+            <a
+              href="https://github.com/ThinhDang464"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+              aria-label="GitHub"
+            >
+              <FaGithub className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+              aria-label="Resume"
+            >
+              <HiDocumentText className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+            </a>
           </div>
           <button className="relative px-6 py-2 border border-blue-400 text-blue-400 rounded-md font-medium overflow-hidden group transition-all duration-300 hover:text-white">
             <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
@@ -190,15 +218,40 @@ export function Header() {
             ))}
 
             <div className="flex gap-3 px-4 py-4">
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group">
-                @
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group">
-                in
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group">
-                gh
-              </div>
+              <a
+                href="thinhd464@gmail.com"
+                className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+                aria-label="Email"
+              >
+                <HiMail className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+              </a>
+              <a
+                href="https://linkedin.com/in/thinhdangg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+              </a>
+              <a
+                href="https://github.com/ThinhDang464"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+                aria-label="GitHub"
+              >
+                <FaGithub className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
+                aria-label="Resume"
+              >
+                <HiDocumentText className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+              </a>
             </div>
 
             <div className="px-4 pb-4">
