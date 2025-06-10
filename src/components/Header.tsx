@@ -18,7 +18,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="text-white">
+    <header className="text-white px-0">
       {/* Desktop Layout - Flexbox approach */}
       <div className="hidden lg:flex items-center justify-between px-6 xl:px-12 2xl:px-20 py-6">
         {/* Logo */}
