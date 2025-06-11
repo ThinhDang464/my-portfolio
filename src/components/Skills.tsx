@@ -21,68 +21,70 @@ const skillsData = [
   { id: 5, title: "Teamwork", icon: FaUsers },
   { id: 6, title: "Communication", icon: FaComments },
 ];
+
 export function Skills() {
-  //Configure carousel setting
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024, //tablets
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 640, //mobile
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          dots: false,
+          arrows: false,
         },
       },
     ],
   };
+
   return (
-    <section className="flex items-center justify-center px-20 py-12 ">
-      <div className=" relative rounded-lg p-12 max-w-4x1 w-full">
-        {/*background vid */}
+    <section className="flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-5">
+      <div className="relative rounded-lg p-6 sm:p-8 md:p-12 max-w-8xl w-full">
         <video
           autoPlay
           loop
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover -z-10 rounded-2xl"
-          /*inset 0 align video at all 4 edges of relative container, w-full h-full take up 100% of available space within positioned boundary*/
-          /*without object cover -> video take 100% container space but display at natural dimension within space -> not fill whole screen */
         >
           <source src="/BG-Code.mp4" type="video/mp4" />
           Your browser does not support Video tag
         </video>
-        {/* Overlay for better text readability */}
+
         <div className="absolute inset-0 bg-black/30 rounded-2xl -z-5"></div>
 
-        {/*Content*/}
         <div className="relative z-20">
-          {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold text-white">Skills</h2>
-            <h3>My Core Skillset</h3>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+              Skills
+            </h2>
+            <h3 className="text-white">My Core Skillset</h3>
           </div>
         </div>
 
-        {/*Slider SKill Cards*/}
         <Slider {...settings}>
           {skillsData.map((skill) => {
             const Card = skill.icon;
             return (
-              <div key={skill.id} className="px-3">
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-gray-700/50 transition-all duration-300">
-                  <Card size={80} className="text-white mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-white">
+              <div key={skill.id} className="px-2 sm:px-3">
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 text-center hover:bg-gray-700/50 transition-all duration-300 h-full overflow-hidden">
+                  <Card
+                    size={50}
+                    className="text-white mx-auto mb-4 sm:w-16 sm:h-16 md:w-20 md:h-20"
+                  />
+                  <h3 className="text-lg sm:text-xl font-semibold text-white break-words">
                     {skill.title}
                   </h3>
                 </div>

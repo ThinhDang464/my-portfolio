@@ -28,3 +28,31 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.timeline-card {
+  position: relative;
+  border-left: 2px solid #4a5568; /* A subtle border to connect cards visually */
+  padding-left: 2rem;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Position the line above the card */
+  left: -2px; /* Align with the border */
+  height: 20px;
+  width: 2px;
+  background-color: #4a5568;
+}
+
+.timeline-card::after {
+  content: '';
+  position: absolute;
+  top: -30px; /* Position the dot at the top of the line */
+  left: -9px; /* Center the dot on the line */
+  height: 16px;
+  width: 16px;
+  background-color: #f97316; /* An accent color, e.g., orange */
+  border-radius: 50%;
+  border: 4px solid #1a202c; /* A border to make it pop from the background */
+}
