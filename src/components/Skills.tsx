@@ -70,6 +70,7 @@ export function Skills() {
           {/* Header */}
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-white">Skills</h2>
+            <h3>My Core Skillset</h3>
           </div>
         </div>
 
