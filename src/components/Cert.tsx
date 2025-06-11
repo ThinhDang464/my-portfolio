@@ -23,7 +23,7 @@ const certs: CertType[] = [
     title: "Certification 1: AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
     date: "June 2024",
-    link: "#",
+    link: "https://www.credly.com/badges/2cdb0591-9186-44d8-b8e6-3166549f943e",
     Icon: FaAws,
   },
   {
@@ -31,7 +31,7 @@ const certs: CertType[] = [
     title: "Certification 2: AWS Cloud Practitioner Course",
     issuer: "Udemy",
     date: "June 2024",
-    link: "#",
+    link: "https://www.udemy.com/certificate/UC-74dcb9e6-470d-4dc5-969f-3528c4611188/",
     Icon: SiUdemy,
   },
   {
@@ -39,12 +39,12 @@ const certs: CertType[] = [
     title: "Certification 3: The Ultimate React Course",
     issuer: "Udemy",
     date: "June 2025",
-    link: "#",
+    link: "https://www.udemy.com/certificate/UC-3330f705-6e2c-4382-b149-50f39e3e550b/",
     Icon: FaReact,
   },
 ];
 
-// Custom Up Arrow Component (no circle)
+// Custom Up Arrow Component
 function UpArrow(props: any) {
   const { onClick } = props;
   return (
