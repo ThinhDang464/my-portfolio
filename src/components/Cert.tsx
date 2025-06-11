@@ -81,8 +81,8 @@ export function Cert() {
     arrows: true,
     nextArrow: <DownArrow />,
     prevArrow: <UpArrow />,
-    autoplay: false,
-    speed: 500,
+    autoplay: true,
+    speed: 400,
   };
 
   return (
