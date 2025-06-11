@@ -69,20 +69,20 @@ export function Tools() {
             <h3 className="text-white">My Reliable Toolbox</h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6">
             {tools.map((tool) => {
               const Icon = tool.icon;
               return (
                 <div
                   key={tool.id}
-                  className="bg-gray-800/40 backdrop-blur-sm rounded-3xl p-3 sm:p-4 flex items-center justify-center space-x-3 sm:space-x-4 hover:bg-gray-700/60 hover:scale-105 transition-all duration-300"
+                  className="bg-gray-800/40 backdrop-blur-sm rounded-2xl p-2 sm:p-3 lg:p-4 flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 lg:space-x-4 hover:bg-gray-700/60 hover:scale-105 transition-all duration-300 min-h-[80px] sm:min-h-[60px]"
                 >
                   <Icon
-                    size={50}
+                    size={30}
                     className="text-white flex-shrink-0 sm:w-16 sm:h-16 md:w-18 md:h-18"
                   />
                   <div>
-                    <h3 className="text-base sm:text-lg font-semibold text-white">
+                    <h3 className="text-[10px] sm:text-xs lg:text-sm font-semibold text-white text-center sm:text-left">
                       {tool.name}
                     </h3>
                   </div>
