@@ -52,7 +52,6 @@ export function Hero() {
           </svg>
         </button>
       </div>
-      <div>Image PlaceHolder</div>
     </section>
   );
 }

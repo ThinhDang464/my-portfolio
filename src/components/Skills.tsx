@@ -51,27 +51,12 @@ export function Skills() {
 
   return (
     <section className="flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-5">
-      <div className="relative rounded-lg p-6 sm:p-8 md:p-12 max-w-8xl w-full">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover -z-10 rounded-2xl"
-        >
-          <source src="/BG-Code.mp4" type="video/mp4" />
-          Your browser does not support Video tag
-        </video>
-
-        <div className="absolute inset-0 bg-black/30 rounded-2xl -z-5"></div>
-
-        <div className="relative z-20">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-              Skills
-            </h2>
-            <h3 className="text-white">My Core Skillset</h3>
-          </div>
+      <div className="relative rounded-lg p-6 sm:p-8 md:p-12 max-w-8xl w-full bg-black/40 ">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+            Skills
+          </h2>
+          <h3 className="text-white">My Core Skillset</h3>
         </div>
 
         <Slider {...settings}>

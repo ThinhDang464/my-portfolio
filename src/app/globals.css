@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0A192F;  /* Your portfolio dark background */
+  --background: #0A192F;  /* Your portfolio for light mode user*/
   --foreground: #ffffff;
 }
 
@@ -19,9 +19,9 @@
 }
 
 body {
-  background: var(--background);
+  background: url('/BG-Gradient.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
-  /* Removed the font-family override - let Tailwind handle it */
 }
 
 /* Smooth scrolling for your navigation anchors */

@@ -4,6 +4,7 @@ import { GameSection } from "@/components/GameSection";
 import { Skills } from "@/components/Skills";
 import { Tools } from "@/components/Tools";
 import { Cert } from "@/components/Cert";
+import { Projects } from "@/components/Projects";
 export default function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills />
       <Tools />
       <Cert />
+      <Projects />
       <GameSection />
     </div>
   );
