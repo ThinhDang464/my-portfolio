@@ -39,7 +39,8 @@ export function Footer() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/Tom-Soft-Resume.pdf"
+              download="TomDang-Resume"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 cursor-pointer group"
