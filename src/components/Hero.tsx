@@ -9,7 +9,11 @@ export function Hero() {
           Hello! I'm Tom <br />
           <span className="text-blue-400">
             <Typewriter
-              words={["Software Developer", "Frontend Engineer", "UI Designer"]}
+              words={[
+                "Software Developer",
+                "Fullstack Developer",
+                "UI Designer",
+              ]}
               loop={true}
               cursor
               cursorStyle="|"
@@ -35,7 +39,11 @@ export function Hero() {
           <p className="text-gray-400 text-sm">- Pelé</p>
         </div>
 
-        <button className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25">
+        <a
+          href="/Tom-Soft-Resume.pdf"
+          download="Tom_Dang_Resume.pdf"
+          className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25" //flex takes fullwidth -> long button inline wrap content only
+        >
           Get Resume
           <svg
             className="w-5 h-5"
@@ -50,7 +58,7 @@ export function Hero() {
               d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
             />
           </svg>
-        </button>
+        </a>
       </div>
     </section>
   );

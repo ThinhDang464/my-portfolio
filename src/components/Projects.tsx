@@ -9,8 +9,9 @@ const projects = [
       "A streaming website with working streaming servers for movies viewing and trailer viewing. Features movies from different providers.",
     image: "/Stream.png",
     technologies: ["React", "TMDB", "Firebase"],
-    githubLink: "https://github.com/yourusername/arcade-capture",
-    liveLink: "https://arcade-capture.demo.com",
+    githubLink: "https://github.com/ThinhDang464/Thomflix",
+    liveLink: "https://www.youtube.com/watch?v=vcYHywIVwow",
+    webLink: "https://thomflix.netlify.app/",
   },
   {
     id: 2,
@@ -19,8 +20,9 @@ const projects = [
       "An AI-driven tool that aids educators in manual tasks like creating and grading assessments. The tool focuses on reading comprehension.",
     image: "/MMW.png",
     technologies: ["NextJs", "Supabase", "Gemini"],
-    githubLink: "https://github.com/yourusername/flappy-birds",
-    liveLink: "https://flappy-birds.demo.com",
+    githubLink: "https://github.com/NicolaNg5/i27-MarkMyWords",
+    liveLink: "https://www.youtube.com/watch?v=MsVgpVCVfx8",
+    webLink: "https://markmywords.au/",
   },
   {
     id: 3,
@@ -29,8 +31,9 @@ const projects = [
       "A decentralised artefacts marketplace that was built and supported by the Ethereum blockchain and Ganache. Inspired by OpenSea ",
     image: "/web3.png",
     technologies: ["React", "Ethereum", "Ganache"],
-    githubLink: "https://github.com/yourusername/cat-vs-mouse",
-    liveLink: "https://cat-vs-mouse.demo.com",
+    githubLink: "https://github.com/andrewzw/Decentralized-Marketplace",
+    liveLink: "https://www.youtube.com/watch?v=vIkEuBTsEzM",
+    webLink: null,
   },
   {
     id: 4,
@@ -39,8 +42,9 @@ const projects = [
       "A database interface for Glenferrie Archery Club to keep track archers' personal records and competition results.",
     image: "/Archer.png",
     technologies: ["PHP", "Javascript", "TailwindCSS"],
-    githubLink: "https://github.com/yourusername/github-analyser",
-    liveLink: "https://github-analyser.demo.com",
+    githubLink: "https://github.com/ThinhDang464/Archery-Glen_Proj",
+    liveLink: "https://www.youtube.com/watch?v=9Qzf3BBB2ew",
+    webLink: null,
   },
   {
     id: 5,
@@ -49,18 +53,20 @@ const projects = [
       "A sophisticated logic engine capable of processing complex propositional statements and inference rules.",
     image: "/todo.png",
     technologies: ["Kotlin", "RoomDatabase", "Delta"],
-    githubLink: "https://github.com/yourusername/inference-engine",
-    liveLink: null, // No live demo for this project
+    githubLink: "https://github.com/ThinhDang464/Taskivist",
+    liveLink: "https://www.youtube.com/watch?v=KRRZQWgtpvs",
+    webLink: null,
   },
   {
     id: 6,
-    title: "Web3 Marketplace",
+    title: "Website Portfolio",
     description:
-      "Decentralized marketplace built on blockchain technology with smart contract integration and NFT support.",
-    image: "/web3-marketplace.jpg",
-    technologies: ["Solidity", "React", "Web3.js"],
-    githubLink: "https://github.com/yourusername/web3-marketplace",
-    liveLink: "https://web3-marketplace.demo.com",
+      "A responsive website portfolio to showcase my tools and projects throughout the years.",
+    image: "/Web.png",
+    technologies: ["NextJs", "TypeScript", "TailwindCSS"],
+    githubLink: "https://github.com/ThinhDang464/my-portfolio",
+    liveLink: null,
+    webLink: null,
   },
 ];
 
@@ -106,6 +112,7 @@ export function Projects() {
 
                 {/* Description - This will grow to fill space */}
                 <p className="text-sm sm:text-base text-gray-300 mb-4 flex-1">
+                  {/*Flex 1 makes description expand to fill available space -> short descp match height of longer -> push blue tech boxes down same height */}
                   {project.description}
                 </p>
 
@@ -121,7 +128,7 @@ export function Projects() {
                   ))}
                 </div>
 
-                {/* Action Buttons - This will stick to bottom */}
+                {/* Action Buttons -  stick to bottom */}
                 <div className="flex gap-3 mt-auto">
                   <a
                     href={project.githubLink}
@@ -142,6 +149,18 @@ export function Projects() {
                     >
                       <FaExternalLinkAlt className="w-3 h-3" />
                       <span>Demo</span>
+                    </a>
+                  )}
+
+                  {project.webLink && (
+                    <a
+                      href={project.webLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 bg-blue-600/50 hover:bg-blue-500/50 text-white text-sm rounded-lg transition-all duration-200 flex-1 justify-center"
+                    >
+                      <FaExternalLinkAlt className="w-3 h-3" />
+                      <span>Visit</span>
                     </a>
                   )}
                 </div>

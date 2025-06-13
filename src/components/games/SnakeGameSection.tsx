@@ -122,12 +122,6 @@ export function SnakeGameSection() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Header */}
         <div className="mb-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Tired of Scrolling?
-          </h2>
-          <p className="text-xl text-gray-300 mb-2">
-            Take a break and play some Snake! 🐍
-          </p>
           <p className="text-gray-400">Use arrow keys to control the snake</p>
         </div>
 
@@ -245,11 +239,6 @@ export function SnakeGameSection() {
               →
             </button>
           </div>
-        </div>
-
-        {/* Fun Message */}
-        <div className="mt-8 text-gray-400">
-          <p>Built with React hooks and lots of ☕</p>
         </div>
       </div>
     </section>

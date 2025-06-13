@@ -14,9 +14,7 @@ export function GameSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Tired of Scrolling?
           </h2>
-          <p className="text-xl text-gray-300 mb-6">
-            Take a break and play some games! 🎮
-          </p>
+          <p className="text-xl text-gray-300 mb-6">Pick a Game</p>
         </div>
 
         {!selectedGame ? (
@@ -28,9 +26,6 @@ export function GameSection() {
             >
               <div className="text-4xl mb-4">🐍</div>
               <h3 className="text-2xl font-bold text-white mb-2">Snake</h3>
-              <p className="text-gray-400 group-hover:text-gray-300">
-                Classic snake game - eat food and grow!
-              </p>
             </div>
 
             <div
@@ -41,9 +36,6 @@ export function GameSection() {
               <h3 className="text-2xl font-bold text-white mb-2">
                 Flappy Bird
               </h3>
-              <p className="text-gray-400 group-hover:text-gray-300">
-                Navigate through pipes - don't crash!
-              </p>
             </div>
           </div>
         ) : (
