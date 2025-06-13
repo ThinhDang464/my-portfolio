@@ -30,7 +30,9 @@ export default function Home() {
       <div id="connect">
         <Connect />
       </div>
-      <GameSection />
+      <div id="game">
+        <GameSection />
+      </div>
       <Footer />
     </div>
   );

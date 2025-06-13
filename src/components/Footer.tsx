@@ -55,12 +55,12 @@ export function Footer() {
           {/* Footer Text */}
           <div className="text-center space-y-2">
             <p className="text-gray-400 text-sm sm:text-base">
-              Built with{" "}
+              Built with ☕ and
               <FaHeart className="inline w-4 h-4 text-red-400 mx-1" /> using
               Next.js & Tailwind CSS
             </p>
             <p className="text-gray-500 text-xs sm:text-sm">
-              © {new Date().getFullYear()} Thinh Dang. All rights reserved.
+              © {new Date().getFullYear()} Tom Dang. All rights reserved.
             </p>
           </div>
         </div>

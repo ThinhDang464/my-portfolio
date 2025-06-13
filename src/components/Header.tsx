@@ -8,9 +8,10 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Skills", href: "#skills" },
-  { name: "Tech", href: "#tech" },
+  { name: "Tools", href: "#tech" },
   { name: "Project", href: "#projects" },
   { name: "Resume", href: "#about" },
+  { name: "Game", href: "#game" },
 ];
 
 export function Header() {
