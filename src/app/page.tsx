@@ -21,6 +21,9 @@ export default function Home() {
       <div id="tech">
         <Tools />
       </div>
+      <div id="cert">
+        <Cert />
+      </div>
       <div id="projects">
         <Projects />
       </div>
