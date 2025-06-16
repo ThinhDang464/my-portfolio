@@ -3,9 +3,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 export function Hero() {
   return (
-    <section className="flex items-center justify-between px-20 py-12">
+    <section className="flex items-center justify-between px-10 sm:px-12 md:px-16 lg:px-20 py-12">
       <div className="max-w-2xl">
-        <h1 className="text-6xl font-bold text-white mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
           Hello! I'm Tom <br />
           <span className="text-blue-400">
             <Typewriter

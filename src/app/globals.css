@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0A192F;  /* Your portfolio for light mode user*/
+  --background: radial-gradient(ellipse at center, 
+    #1a1a2e 0%,
+    #16213e 25%,
+    #0f3460 45%,
+    #533483 65%,
+    #16213e 85%,
+    #0a0a1a 100%
+  );
   --foreground: #ffffff;
 }
 
@@ -19,9 +26,20 @@
 }
 
 body {
-  background: url('/BG-Gradient.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: 
+    radial-gradient(ellipse 120% 80% at 30% 40%, rgba(83, 52, 131, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse 100% 60% at 70% 60%, rgba(15, 52, 96, 0.3) 0%, transparent 50%),
+    linear-gradient(135deg, 
+      #0a0a1a 0%,
+      #16213e 20%,
+      #1a1a2e 40%,
+      #0f3460 60%,
+      #533483 80%,
+      #16213e 100%
+    );
+  background-attachment: fixed;
   color: var(--foreground);
+  min-height: 100vh;
 }
 
 /* Smooth scrolling for your navigation anchors */

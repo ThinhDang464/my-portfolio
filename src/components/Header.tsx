@@ -40,7 +40,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 text-white px-0 bg-black/40 backdrop-blur-sm">
       {/* Desktop Layout */}
-      <div className="hidden lg:flex items-center justify-between px-6 xl:px-12 2xl:px-20 py-6">
+      <div className="hidden lg:flex items-center justify-between px-6 xl:px-12 2xl:px-20 py-4">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           <Image
