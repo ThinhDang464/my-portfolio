@@ -41,7 +41,7 @@ const projects = [
     description:
       "A database interface for Glenferrie Archery Club to keep track archers' personal records and competition results.",
     image: "/Archer.png",
-    technologies: ["PHP", "Javascript", "TailwindCSS"],
+    technologies: ["PHP", "JavaScript", "TailwindCSS"],
     githubLink: "https://github.com/ThinhDang464/Archery-Glen_Proj",
     liveLink: "https://www.youtube.com/watch?v=9Qzf3BBB2ew",
     webLink: null,
@@ -67,6 +67,17 @@ const projects = [
     githubLink: "https://github.com/ThinhDang464/my-portfolio",
     liveLink: null,
     webLink: null,
+  },
+  {
+    id: 7,
+    title: "Studio Portfolio Website",
+    description:
+      "A website for a Vietnamese studio to showcase their graphic design and illustrations projects.",
+    image: "/ivy-stu.png",
+    technologies: ["React", "JavaScript", "TailwindCSS"],
+    githubLink: "https://github.com/ThinhDang464/ivy-stu",
+    liveLink: null,
+    webLink: "https://ivystudio.netlify.app/",
   },
 ];
 
