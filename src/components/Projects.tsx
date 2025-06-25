@@ -140,7 +140,8 @@ export function Projects() {
                 </div>
 
                 {/* Action Buttons -  stick to bottom */}
-                <div className="flex gap-3 mt-auto">
+                <div className="flex flex-wrap gap-3 mt-auto">
+                  {/*flex wrap helps child element (button) go to new line if there is not ebough space in parent element */}
                   <a
                     href={project.githubLink}
                     target="_blank"
@@ -150,7 +151,6 @@ export function Projects() {
                     <FaGithub className="w-4 h-4" />
                     <span>GitHub</span>
                   </a>
-
                   {project.liveLink && (
                     <a
                       href={project.liveLink}
@@ -162,7 +162,6 @@ export function Projects() {
                       <span>Demo</span>
                     </a>
                   )}
-
                   {project.webLink && (
                     <a
                       href={project.webLink}
