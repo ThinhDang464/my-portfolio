@@ -79,6 +79,17 @@ const projects = [
     liveLink: null,
     webLink: "https://ivystudio.netlify.app/",
   },
+  {
+    id: 8,
+    title: "Fullstack Ecommerce Website",
+    description:
+      "An Ecommerce website that has manageable admin dashboard and full payment capability through Razor API",
+    image: "/cotton.png",
+    technologies: ["React", "JavaScript", "TailwindCSS", "RazorAPI"],
+    githubLink: "https://github.com/ThinhDang464/CottonTom",
+    liveLink: null,
+    webLink: null,
+  },
 ];
 
 export function Projects() {
