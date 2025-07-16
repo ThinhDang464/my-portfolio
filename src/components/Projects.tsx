@@ -3,16 +3,28 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    id: 1,
-    title: "Streaming Website",
+    id: 8,
+    title: "Fullstack Ecommerce Website",
     description:
-      "A streaming website with working streaming servers for movies viewing and trailer viewing. Features movies from different providers.",
-    image: "/Stream.png",
-    technologies: ["React", "TMDB", "Firebase"],
-    githubLink: "https://github.com/ThinhDang464/Thomflix",
-    liveLink: "https://www.youtube.com/watch?v=vcYHywIVwow",
-    webLink: "https://thomflix.netlify.app/",
+      "An Ecommerce website that has manageable admin dashboard and full payment capability through Razor API",
+    image: "/cotton.png",
+    technologies: ["MERN", "Stripe", "TailwindCSS", "Vercel"],
+    githubLink: "https://github.com/ThinhDang464/CottonTom",
+    liveLink: "",
+    webLink: "https://cotton-tom-fe.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Studio Portfolio Website",
+    description:
+      "A website for a Vietnamese studio to showcase their graphic design and illustrations projects.",
+    image: "/ivy-stu.png",
+    technologies: ["React", "JavaScript", "TailwindCSS"],
+    githubLink: "https://github.com/ThinhDang464/ivy-stu",
+    liveLink: null,
+    webLink: "https://ivystudio.netlify.app/",
+  },
+
   {
     id: 2,
     title: "AI-Tool for Assessment Management",
@@ -69,26 +81,15 @@ const projects = [
     webLink: null,
   },
   {
-    id: 7,
-    title: "Studio Portfolio Website",
+    id: 1,
+    title: "Streaming Website",
     description:
-      "A website for a Vietnamese studio to showcase their graphic design and illustrations projects.",
-    image: "/ivy-stu.png",
-    technologies: ["React", "JavaScript", "TailwindCSS"],
-    githubLink: "https://github.com/ThinhDang464/ivy-stu",
-    liveLink: null,
-    webLink: "https://ivystudio.netlify.app/",
-  },
-  {
-    id: 8,
-    title: "Fullstack Ecommerce Website",
-    description:
-      "An Ecommerce website that has manageable admin dashboard and full payment capability through Razor API",
-    image: "/cotton.png",
-    technologies: ["React", "JavaScript", "TailwindCSS", "RazorAPI"],
-    githubLink: "https://github.com/ThinhDang464/CottonTom",
-    liveLink: null,
-    webLink: null,
+      "A streaming website with working streaming servers for movies viewing and trailer viewing. Features movies from different providers.",
+    image: "/Stream.png",
+    technologies: ["React", "TMDB", "Firebase"],
+    githubLink: "https://github.com/ThinhDang464/Thomflix",
+    liveLink: "https://www.youtube.com/watch?v=vcYHywIVwow",
+    webLink: "https://thomflix.netlify.app/",
   },
 ];
 
