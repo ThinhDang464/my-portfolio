@@ -3,7 +3,7 @@
 export function About() {
   return (
     <section className="flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-12">
-      <div className="relative rounded-xl p-6 sm:p-8 md:p-12 max-w-8xl w-full bg-black/40 ">
+      <div className="relative rounded-xl p-6 sm:p-8 md:p-12 max-w-8xl w-full bg-black/40 flex flex-col items-center">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             Grab My Resume
@@ -23,16 +23,17 @@ export function About() {
           <div className="max-w-md">
             <img
               src="/Page2.jpg"
-              alt="Resume Page 1"
+              alt="Resume Page 2" // Corrected alt text
               className="rounded-lg w-full h-auto"
             />
           </div>
         </div>
-        <div className="flex gap-70 justify-center mt-8 lg:mt-12">
+        {/* --- MODIFIED BUTTON CONTAINER --- */}
+        <div className="flex flex-col gap-4 mt-5 sm:flex-row items-center sm:justify-between sm:mt-12 sm:gap-70">
           <a
             href="/Tom-Soft-Resume.pdf"
             download="Tom_Dang_Resume.pdf"
-            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25" //flex takes fullwidth -> long button inline wrap content only
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
           >
             Download 2-pager
             <svg
@@ -52,7 +53,7 @@ export function About() {
           <a
             href="/TomDang-OnePage-Resume.pdf"
             download="Tom_Dang_Resume.pdf"
-            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25" //flex takes fullwidth -> long button inline wrap content only
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
           >
             Download 1-pager
             <svg
