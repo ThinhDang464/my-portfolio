@@ -62,7 +62,7 @@ const projects = [
     id: 5,
     title: "TaskiVist-Android TodoList App",
     description:
-      "A sophisticated logic engine capable of processing complex propositional statements and inference rules.",
+      "A comprehensive todolist app with Room database for persistent offline storage. The app was built on MVVM architecture with Kotlin.",
     image: "/todo.png",
     technologies: ["Kotlin", "RoomDatabase", "Delta"],
     githubLink: "https://github.com/ThinhDang464/Taskivist",
