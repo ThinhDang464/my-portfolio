@@ -14,6 +14,17 @@ const projects = [
     webLink: "https://cotton-tom-fe.vercel.app/",
   },
   {
+    id: 9,
+    title: "Realtime Chat and Video Call Website",
+    description:
+      "A web application that facilitates real time chat and video call between users through StreamIO",
+    image: "/TomChat.png",
+    technologies: ["MERN", "StreamIO", "DaisyUI", "Render"],
+    githubLink: "https://github.com/ThinhDang464/Tomchat",
+    liveLink: "",
+    webLink: "https://tomchat-sl8l.onrender.com/",
+  },
+  {
     id: 7,
     title: "Studio Portfolio Website",
     description:
