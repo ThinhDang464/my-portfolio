@@ -6,7 +6,7 @@ const projects = [
     id: 8,
     title: "Fullstack Ecommerce Website",
     description:
-      "An Ecommerce website that has manageable admin dashboard and full payment capability through Razor API",
+      "An Ecommerce website that has manageable admin dashboard and full payment capability through StripeAPI",
     image: "/cotton.png",
     technologies: ["MERN", "Stripe", "TailwindCSS", "Vercel"],
     githubLink: "https://github.com/ThinhDang464/CottonTom",
